@@ -1,0 +1,26 @@
+{
+  "name": "ts-base-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist",
+    "build": "tsc",
+    "build-and-run": "npm run build && npm run start",
+    "jest-functional": "jest --config ./jest/jest.functional.config.js",
+    "jest-unit": "jest --config ./jest/jest.unit.config.js",
+    "test:functional": "npm run jest-functional",
+    "test:unit": "npm run jest-unit",
+    "test": "npm-run-all test:*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^8.0.47"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.2.1"
+  }
+}
